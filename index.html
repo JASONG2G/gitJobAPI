@@ -7,6 +7,59 @@
     <title>Github Job Board</title>
   </head>
   <body>
+    <header id="search_trunk">
+      <h1>GitHub Job Board</h1>
+      <form id="search_form">
+        <input required type="text" placeholder="Enter job title" required />
+        <input required type="text" placeholder="Enter job location" required />
+        <button>Search</button>
+      </form>
+    </header>
+    <section id="content_area">
+      <nav id="sidebar_nav">
+        <h2>Filter</h2>
+        <div class="tube">
+          <label for="all">Display All</label>
+          <input type="checkbox" name="all" />
+        </div>
+        <div class="tube">
+          <label for="fulltime">Full Time</label>
+          <input type="checkbox" name="fulltime" />
+        </div>
+        <div class="tube">
+          <label for="parttime">Part Time</label>
+          <input type="checkbox" name="parttime" />
+        </div>
+      </nav>
+      <section id="cards_container">
+        <article class="card_container">
+          <div id="card_image_title_description">
+            <div id="card_image"></div>
+            <div id="card_title_description">
+              <h1 id="card_title">Full Stack Developer</h1>
+              <p id="description">
+                <span>Description:</span> Lorem ipsum dolor sit amet consectetur,
+                adipisicing,Iusto, exercitationem consectetur eligendi
+                adipisci.Iusto, exercitationem consectetur eligendi
+                adipisci.Iusto, exercitationem consectetur eligendi
+                adipisci.Iusto, exercitationem consectetur eligendi
+                adipisci.Iusto, exercitationem consectetur eligendi adipisci.
+                elit. Iusto, exercitationem consectetur eligendi adipisci.(100
+                words limit).
+              </p>
+            </div>
+          </div>
+          <div id="how_to_details_btn">
+            <p id="how_to">
+              <span>How to Apply:</span>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+              expedita dolorum deleniti accusantium doloremque consequatur.
+            </p>
+            <a id="deltails_btn" href="#">Details</a>
+          </div>
+        </article>
+      </section>
+    </section>
+
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>

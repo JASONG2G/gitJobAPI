@@ -1,0 +1,133 @@
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-color: #2B7FC3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+#search_trunk h1 {
+    background-color: #2B7FC3;
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  margin-right: 5px;
+}
+
+.tube {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+#content_area {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+nav {
+  border: 1px solid blue;
+  height: 100vh;
+  
+}
+
+nav h2 {
+  margin-left: 10px;
+}
+
+#cards_container {
+  border: 1px solid red;
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card_container {
+  margin: 5px;
+  border: 2px solid rgb(244, 244, 20);
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "card_image_title_description"
+    "how_to_details_btn";
+}
+
+#card_image_title_description {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "card_image card_title_description"
+}
+
+#how_to_details_btn {
+    display: flex;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+#how_to_details_btn a {
+    align-self: flex-end;
+    margin: 5px 5px 5px 0;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px;
+}
+
+#card_title_description {
+    margin-top: 5px;
+}
+
+#card_image {
+  /* grid-area: image; */
+  background: url("https://www.influxdata.com/wp-content/uploads/GitHub-logo.jpg");
+  background-size: cover;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--secondary-color);
+  margin: 5px 0 5px 5px;
+}
+
+#card_title {
+    margin-bottom: 10px;
+}
+
+#how_to_details_btn {
+    border: 2px solid rgb(128, 0, 6);
+}
