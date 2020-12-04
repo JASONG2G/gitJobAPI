@@ -116,7 +116,7 @@ span {
 }
 
 #card_title_description {
-  margin: 5px 0 5px 5px;
+  margin: 5px;
   border: 2px solid var(--secondary-color);
 }
 
